@@ -1,0 +1,6 @@
+*.pyc
+junk/*
+env
+.vscode
+.scrapy
+output
