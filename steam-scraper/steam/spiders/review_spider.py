@@ -76,10 +76,11 @@ class ReviewSpider(scrapy.Spider):
         'http://steamcommunity.com/app/416600/reviews/?browsefilter=mostrecent&p=1',
     ]
 
-    def __init__(self, url_file=None, steam_id=None, *args, **kwargs):
+    def __init__(self, url_file=None, steam_id=None, games_file=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.url_file = url_file
         self.steam_id = steam_id
+        self.games_file = games_file
 
     def read_urls(self):
         with open(self.url_file, 'r') as f:
@@ -88,15 +89,26 @@ class ReviewSpider(scrapy.Spider):
                 if url:
                     yield scrapy.Request(url, callback=self.parse)
 
+    def read_games(self):
+        with open(self.games_file, 'r') as f:
+            for game in f:
+                game_id = re.search('\"id\": \"(\d+)\"', game).group(1)
+                if game_id:
+                    url = f'http://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'
+                    yield scrapy.Request(url, callback=self.parse)
+                
+
     def start_requests(self):
         if self.steam_id:
+            # Ordered by most helpful of all time
             url = (
-                f'http://steamcommunity.com/app/{self.steam_id}/reviews/'
-                '?browsefilter=mostrecent&p=1'
+                f'http://steamcommunity.com/app/{self.steam_id}/reviews/?browsefilter=toprated&p=1'
             )
             yield Request(url, callback=self.parse)
         elif self.url_file:
             yield from self.read_urls()
+        elif self.games_file:
+            yield from self.read_games()
         else:
             for url in self.test_urls:
                 yield Request(url, callback=self.parse)
