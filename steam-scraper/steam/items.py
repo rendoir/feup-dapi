@@ -75,8 +75,12 @@ class ProductItem(scrapy.Item):
     genres = scrapy.Field(
         output_processor=Compose(TakeFirst(), lambda x: x.split(','), MapCompose(StripText()))
     )
-    developer = scrapy.Field()
-    publisher = scrapy.Field()
+    developer = scrapy.Field(
+        output_processor=Compose(TakeFirst(), lambda x: x.split(", "), MapCompose(StripText()))
+    )
+    publisher = scrapy.Field(
+        output_processor=Compose(TakeFirst(), lambda x: x.split(", "), MapCompose(StripText()))
+    )
     release_date = scrapy.Field(
         output_processor=Compose(TakeFirst(), StripText(), standardize_date)
     )

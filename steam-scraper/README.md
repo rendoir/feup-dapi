@@ -37,14 +37,15 @@ Here's some example output:
     'description': "Choose your fate in Assassin's Creed® Odyssey. From outcast "
                    'to living legend, embark on an odyssey to uncover the secrets '
                    'of your past and change the fate of Ancient Greece.',
-    'developer': 'Ubisoft Quebec, Ubisoft Montreal, Ubisoft Bucharest, Ubisoft '
-                 'Singapore, Ubisoft Montpellier, Ubisoft Kiev, Ubisoft Shanghai',
+    'developer': ['Ubisoft Quebec', 'Ubisoft Montreal', 'Ubisoft Bucharest', 
+                  'Ubisoft Singapore', 'Ubisoft Montpellier', 'Ubisoft Kiev', 
+                  'Ubisoft Shanghai'],
     'early_access': False,
     'genres': ['Action', 'Adventure', 'RPG'],
     'id': '812140',
     'n_reviews': 28504,
     'price': '59.99€',
-    'publisher': 'Ubisoft',
+    'publisher': ['Ubisoft'],
     'release_date': '5 Oct, 2018',
     'sentiment': 'Very Positive',
     'specs': ['Single-player', 'Steam Achievements', 'Steam Trading Cards',
