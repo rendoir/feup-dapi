@@ -31,8 +31,8 @@ def merge_files():
     for product_id in id_to_product:
         dataset_line = id_to_product[product_id].rstrip("\n\r")[:-1]
         if product_id in id_to_reviews:
-            dataset_line = dataset_line + ', "reviews": [' + id_to_reviews[product_id] + ']}'
-        dataset_file.write(dataset_line + "\n")
+            dataset_line = dataset_line + ', "reviews": [' + id_to_reviews[product_id] + ']'
+        dataset_file.write(dataset_line + "}\n")
 
     dataset_file.close()
     products_file.close()
