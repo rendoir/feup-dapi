@@ -1,5 +1,6 @@
 from datetime import datetime, date
 import logging
+import re
 
 import scrapy
 from scrapy.loader import ItemLoader
@@ -28,26 +29,24 @@ def standardize_date(x):
     Convert x from recognized input formats to desired output format,
     or leave unchanged if input format is not recognized.
     """
-    fmt_fail = False
-
-    for fmt in ['%b %d, %Y', '%B %d, %Y']:
+   
+    for fmt in ['%d %b, %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y']:
         try:
-            return datetime.strptime(x, fmt).strftime('%Y-%m-%d')
+            return datetime.strptime(x, fmt).strftime('%d-%m-%Y')
         except ValueError:
-            fmt_fail = True
+            pass
 
     # Induce year to current year if it is missing.
-    for fmt in ['%b %d', '%B %d']:
+    for fmt in ['%b %d', '%B %d', '%d %b', '%d %B']:
         try:
             d = datetime.strptime(x, fmt)
             d = d.replace(year=date.today().year)
-            return d.strftime('%Y-%m-%d')
+            return d.strftime('%d-%m-%Y')
         except ValueError:
-            fmt_fail = True
+            pass
 
-    if fmt_fail:
-        logger.debug(f'Could not process date {x}')
-
+    # Format not supported
+    logger.debug(f'Could not process date {x}')
     return x
 
 
