@@ -35,12 +35,14 @@ class CircumventAgeCheckMiddleware(RedirectMiddleware):
     def _redirect(self, redirected, request, spider, reason):
         # Only overrule the default redirect behavior
         # in the case of mature content checkpoints.
-        if not re.findall('app/(.*)/agecheck', redirected.url):
+        if not '/agecheck/' in redirected.url:
             return super()._redirect(redirected, request, spider, reason)
 
         logger.debug(f'Button-type age check triggered for {request.url}.')
 
         return Request(url=request.url,
-                       cookies={'mature_content': '1'},
+                       cookies=[{'name': 'wants_mature_content', 'value': '1', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
+                                   {'name': 'lastagecheckage', 'value': '1-0-1996', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
+                                   {'name': 'birthtime', 'value': '849398401', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'}],
                        meta={'dont_cache': True},
                        callback=spider.parse_product)

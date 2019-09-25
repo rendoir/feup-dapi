@@ -67,7 +67,7 @@ def str_to_int(x):
 
 
 class ProductItem(scrapy.Item):
-    url = scrapy.Field()
+    # url = scrapy.Field()
     id = scrapy.Field()
     app_name = scrapy.Field()
     # reviews_url = scrapy.Field()
@@ -112,12 +112,14 @@ class ProductItem(scrapy.Item):
     # )
     early_access = scrapy.Field()
     description = scrapy.Field()
+    franchise = scrapy.Field()
+    about = scrapy.Field()
 
 
 class ReviewItem(scrapy.Item):
     product_id = scrapy.Field()
-    page = scrapy.Field()
-    page_order = scrapy.Field()
+    # page = scrapy.Field()
+    # page_order = scrapy.Field()
     recommended = scrapy.Field(
         output_processor=Compose(TakeFirst(), simplify_recommended),
     )

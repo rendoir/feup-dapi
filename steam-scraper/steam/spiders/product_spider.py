@@ -2,7 +2,7 @@ import logging
 import re
 from w3lib.url import canonicalize_url, url_query_cleaner
 
-from scrapy.http import FormRequest
+from scrapy.http import FormRequest, Request
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
@@ -17,7 +17,7 @@ def load_product(response):
 
     url = url_query_cleaner(response.url, ['snr'], remove=True)
     url = canonicalize_url(url)
-    loader.add_value('url', url)
+    # loader.add_value('url', url)
 
     found_id = re.findall('/app/(.*?)/', response.url)
     if found_id:
@@ -40,6 +40,7 @@ def load_product(response):
                 ('Genre:', 'genres'),
                 ('Developer:', 'developer'),
                 ('Publisher:', 'publisher'),
+                ('Franchise:', 'franchise'),
                 ('Release Date:', 'release_date')
             ]:
                 if prop in line:
@@ -75,6 +76,13 @@ def load_product(response):
     else:
         loader.add_value('early_access', False)
 
+    # About
+    about = response.css('#game_area_description').get()
+    if about:
+        about = re.sub('<h2>About This Game</h2>', '', about) # Remove about header
+        about = re.sub('<[^<]+?>|\t|\x0a|\r', '', about) # Remove tags
+        loader.add_value('about', about)
+
     return loader.load_item()
 
 
@@ -101,34 +109,14 @@ class ProductSpider(CrawlSpider):
     def start_requests(self):
         if self.steam_id:
             yield Request(f'http://store.steampowered.com/app/{self.steam_id}/',
-                          callback=self.parse_product)
+                          callback=self.parse_product,
+                          cookies=[{'name': 'wants_mature_content', 'value': '1', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
+                                   {'name': 'lastagecheckage', 'value': '1-0-1996', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
+                                   {'name': 'birthtime', 'value': '817776001', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'}])
         else:
             yield from super().start_requests()
 
     def parse_product(self, response):
         # Circumvent age selection form.
-        if '/agecheck/app' in response.url:
-            logger.debug(f'Form-type age check triggered for {response.url}.')
-
-            form = response.css('#agegate_box form')
-
-            action = form.xpath('@action').extract_first()
-            name = form.xpath('input/@name').extract_first()
-            value = form.xpath('input/@value').extract_first()
-
-            formdata = {
-                name: value,
-                'ageDay': '1',
-                'ageMonth': '1',
-                'ageYear': '1955'
-            }
-
-            yield FormRequest(
-                url=action,
-                method='POST',
-                formdata=formdata,
-                callback=self.parse_product
-            )
-
-        else:
+        if not '/agecheck/' in response.url:
             yield load_product(response)

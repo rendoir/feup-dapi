@@ -14,8 +14,8 @@ def load_review(review, product_id, page, order):
     loader = ReviewItemLoader(ReviewItem(), review)
 
     loader.add_value('product_id', product_id)
-    loader.add_value('page', page)
-    loader.add_value('page_order', order)
+    # loader.add_value('page', page)
+    # loader.add_value('page_order', order)
 
     # Review data.
     loader.add_css('recommended', '.title::text')
