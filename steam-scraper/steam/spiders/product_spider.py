@@ -27,7 +27,7 @@ def load_product(response):
         loader.add_value('id', id)
 
     # Publication details.
-    details = response.css('.details_block').extract_first()
+    details = response.css('.game_details .details_block').extract_first()
     try:
         details = re.sub('</div>', '</div><br>', details) # Add <br> to the end of each dev_row div
         details = details.split('<br>')
