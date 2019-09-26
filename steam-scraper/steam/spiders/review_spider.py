@@ -72,12 +72,8 @@ def get_product_id(response):
 
 class ReviewSpider(scrapy.Spider):
     name = 'reviews'
-    test_urls = [
-        # Full Metal Furies
-        'http://steamcommunity.com/app/416600/reviews/?browsefilter=mostrecent&p=1',
-    ]
 
-    product_ids = dict()
+    game_id_to_number_reviews = dict()
 
     def __init__(self, url_file=None, steam_id=None, games_file=None, limit=sys.maxsize, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -85,13 +81,14 @@ class ReviewSpider(scrapy.Spider):
         self.steam_id = steam_id
         self.games_file = games_file
         self.limit = int(limit)
-        print('LIMIT: {}'.format(self.limit))
 
     def read_urls(self):
         with open(self.url_file, 'r') as f:
             for url in f:
                 url = url.strip()
                 if url:
+                    id = re.search('/(\d+)/', url).group(1)
+                    self.game_id_to_number_reviews[id] = 0
                     yield scrapy.Request(url, callback=self.parse)
 
     def read_games(self):
@@ -99,7 +96,7 @@ class ReviewSpider(scrapy.Spider):
             for game in f:
                 game_id = re.search('\"id\": \"(\d+)\"', game).group(1)
                 if game_id:
-                    self.product_ids[game_id] = 0
+                    self.game_id_to_number_reviews[game_id] = 0
                     url = f'http://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'
                     yield scrapy.Request(url, callback=self.parse)
                 
@@ -110,14 +107,13 @@ class ReviewSpider(scrapy.Spider):
             url = (
                 f'http://steamcommunity.com/app/{self.steam_id}/reviews/?browsefilter=toprated&p=1'
             )
+            self.game_id_to_number_reviews[self.steam_id] = 0
             yield Request(url, callback=self.parse)
         elif self.url_file:
             yield from self.read_urls()
         elif self.games_file:
             yield from self.read_games()
-        else:
-            for url in self.test_urls:
-                yield Request(url, callback=self.parse)
+
 
     def parse(self, response):
         page = get_page(response)
@@ -127,9 +123,9 @@ class ReviewSpider(scrapy.Spider):
         reviews = response.css('div .apphub_Card')
         for i, review in enumerate(reviews):
             yield load_review(review, product_id, page, i)
-            self.product_ids[product_id] += 1
-            if self.product_ids[product_id] >= self.limit:
-                del self.product_ids[product_id]
+            self.game_id_to_number_reviews[product_id] += 1
+            if self.game_id_to_number_reviews[product_id] >= self.limit:
+                del self.game_id_to_number_reviews[product_id]
                 return
 
         # Navigate to next page.

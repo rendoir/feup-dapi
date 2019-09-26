@@ -25,11 +25,23 @@ pip3 install -r dependencies.txt
 
 The purpose of `ProductSpider` is to discover product pages on the [Steam product listing](http://store.steampowered.com/search/?) and extract useful metadata from them.
 A neat feature of this spider is that it automatically navigates through Steam's age verification checkpoints.  
+
 To crawl through all the products on Steam:
 ```bash
 scrapy crawl products -o output/products.jl 
 ```
 When it completes you should have metadata for all games on Steam in `output/products.jl`.
+
+It's also possible to retrieve only one product:
+```bash
+scrapy crawl products -o output/product.jl -a steam_id=28504
+```
+
+Scrapy also includes a setting to limit the number of scraped products:
+```bash
+scrapy crawl products -o output/product.jl -a steam_id=28504 -s CLOSESPIDER_ITEMCOUNT=10
+```
+
 Here's some example output:
 ```python
 {
@@ -46,7 +58,8 @@ Here's some example output:
     'n_reviews': 28504,
     'price': '59.99€',
     'publisher': ['Ubisoft'],
-    'release_date': '5 Oct, 2018',
+    'franchise': "Assassin's Creed", 
+    'release_date': "05-10-2018",
     'sentiment': 'Very Positive',
     'specs': ['Single-player', 'Steam Achievements', 'Steam Trading Cards',
               'Captions available', 'In-App Purchases', 'Partial Controller Support'],
@@ -58,13 +71,35 @@ Here's some example output:
              'Atmospheric', 'Great Soundtrack', 'Nudity',
              'Multiplayer', 'Gore'],
     'title': "Assassin's Creed® Odyssey",
-    'url': 'https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/'
+    'about': "Choose your fate in Assassin's Creed® Odyssey.From outcast to "
+          'living legend, embark on an odyssey to uncover the secrets of your '
+          'past and change the fate of Ancient Greece.TRAVEL TO ANCIENT GREECE '
+          'From lush vibrant forests to volcanic islands and bustling cities, '
+          'start a journey of exploration and encounters in a war torn world '
+          'shaped by gods and men.FORGE YOUR LEGENDYour decisions will impact '
+          'how your odyssey unfolds. Play through multiple endings thanks to '
+          'the new dialogue system and the choices you make. Customize your '
+          'gear, ship, and special abilities to become a legend.FIGHT ON A NEW '
+          "SCALEDemonstrate your warrior's abilities in large scale epic "
+          'battles between Athens and Sparta featuring hundreds of soldiers, '
+          'or ram and cleave your way through entire fleets in naval battles '
+          'across the Aegean Sea.GAZE IN WONDERExperience the action in a '
+          'whole new light with Tobii Eye Tracking. The Extended View feature '
+          'gives you a broader perspective of the environment, and the Dynamic '
+          'Light and Sun Effects immerse you in the sandy dunes according to '
+          'where you set your sights. Tagging, aiming and locking on your '
+          'targets becomes a lot more natural when you can do it by looking at '
+          'them. Let your vision lead the way and enhance your gameplay. Visit '
+          'the Tobii website to check the list of compatible devices. '
+          '-----Additional notes:Eye tracking features available with Tobii '
+          'Eye Tracking.'
 }
 ```
 
 ## Extracting the Reviews
 
 The purpose of `ReviewSpider` is to scrape user-submitted reviews of a particular product (`steam_id` parameter) or set a of products from the [Steam community portal](http://steamcommunity.com/).
+
 It can alternatively ingest a text file containing URLs such as
 ```
 http://steamcommunity.com/app/316790/reviews/?browsefilter=mostrecent&p=1
@@ -80,15 +115,24 @@ It can also process the output file from a previous product crawl, scraping all 
 ```bash
 scrapy crawl reviews -o output/reviews.jl -a games_file=output/products.jl
 ```
-An output sample:
+
+There's also an option to limit the number of reviews per product:
+```bash
+scrapy crawl reviews -o output/reviews.jl -a steam_id=812140 -a limit=100
+```
+
+Or limit the total number of reviews using Scrapy's settings:
+```bash
+scrapy crawl reviews -o output/reviews.jl -a games_file=output/products.jl -s CLOSESPIDER_ITEMCOUNT=1000
+```
+
+Here's an output sample:
 ```python
 {
     'date': '2019-08-12',
     'early_access': False,
     'found_funny': 2,
     'hours': 70.9,
-    'page': 7,
-    'page_order': 4,
     'product_id': '812140',
     'products': 156,
     'recommended': True,
