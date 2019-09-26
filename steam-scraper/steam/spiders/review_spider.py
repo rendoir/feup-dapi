@@ -1,4 +1,5 @@
 import re
+import sys
 
 import scrapy
 from scrapy.http import FormRequest, Request
@@ -76,11 +77,15 @@ class ReviewSpider(scrapy.Spider):
         'http://steamcommunity.com/app/416600/reviews/?browsefilter=mostrecent&p=1',
     ]
 
-    def __init__(self, url_file=None, steam_id=None, games_file=None, *args, **kwargs):
+    product_ids = dict()
+
+    def __init__(self, url_file=None, steam_id=None, games_file=None, limit=sys.maxsize, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.url_file = url_file
         self.steam_id = steam_id
         self.games_file = games_file
+        self.limit = int(limit)
+        print('LIMIT: {}'.format(self.limit))
 
     def read_urls(self):
         with open(self.url_file, 'r') as f:
@@ -94,6 +99,7 @@ class ReviewSpider(scrapy.Spider):
             for game in f:
                 game_id = re.search('\"id\": \"(\d+)\"', game).group(1)
                 if game_id:
+                    self.product_ids[game_id] = 0
                     url = f'http://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'
                     yield scrapy.Request(url, callback=self.parse)
                 
@@ -121,6 +127,10 @@ class ReviewSpider(scrapy.Spider):
         reviews = response.css('div .apphub_Card')
         for i, review in enumerate(reviews):
             yield load_review(review, product_id, page, i)
+            self.product_ids[product_id] += 1
+            if self.product_ids[product_id] >= self.limit:
+                del self.product_ids[product_id]
+                return
 
         # Navigate to next page.
         form = response.xpath('//form[contains(@id, "MoreContentForm")]')

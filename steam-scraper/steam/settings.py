@@ -9,12 +9,18 @@ USER_AGENT = 'Steam Scraper'
 
 ROBOTSTXT_OBEY = True
 
+EXTENSIONS = {
+    'scrapy.extensions.closespider.CloseSpider': 500,
+}
+
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.redirect.RedirectMiddleware': None,
     'steam.middlewares.CircumventAgeCheckMiddleware': 600,
 }
 
 AUTOTHROTTLE_ENABLED = True
+
+CONCURRENT_REQUESTS = 1
 
 DUPEFILTER_CLASS = 'steam.middlewares.SteamDupeFilter'
 
