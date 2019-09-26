@@ -97,7 +97,7 @@ class ReviewSpider(scrapy.Spider):
                 game_id = re.search('\"id\": \"(\d+)\"', game).group(1)
                 if game_id:
                     self.game_id_to_number_reviews[game_id] = 0
-                    url = f'http://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'
+                    url = f'https://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'
                     yield scrapy.Request(url, callback=self.parse)
                 
 
@@ -105,7 +105,7 @@ class ReviewSpider(scrapy.Spider):
         if self.steam_id:
             # Ordered by most helpful of all time
             url = (
-                f'http://steamcommunity.com/app/{self.steam_id}/reviews/?browsefilter=toprated&p=1'
+                f'https://steamcommunity.com/app/{self.steam_id}/reviews/?browsefilter=toprated&p=1'
             )
             self.game_id_to_number_reviews[self.steam_id] = 0
             yield Request(url, callback=self.parse)

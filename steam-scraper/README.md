@@ -34,12 +34,12 @@ When it completes you should have metadata for all games on Steam in `output/pro
 
 It's also possible to retrieve only one product:
 ```bash
-scrapy crawl products -o output/product.jl -a steam_id=28504
+scrapy crawl products -o output/product.jl -a steam_id=812140
 ```
 
 Scrapy also includes a setting to limit the number of scraped products:
 ```bash
-scrapy crawl products -o output/product.jl -a steam_id=28504 -s CLOSESPIDER_ITEMCOUNT=10
+scrapy crawl products -o output/product.jl -a steam_id=812140 -s CLOSESPIDER_ITEMCOUNT=10
 ```
 
 Here's some example output:
@@ -102,9 +102,9 @@ The purpose of `ReviewSpider` is to scrape user-submitted reviews of a particula
 
 It can alternatively ingest a text file containing URLs such as
 ```
-http://steamcommunity.com/app/316790/reviews/?browsefilter=mostrecent&p=1
-http://steamcommunity.com/app/207610/reviews/?browsefilter=mostrecent&p=1
-http://steamcommunity.com/app/414700/reviews/?browsefilter=mostrecent&p=1
+https://steamcommunity.com/app/316790/reviews/?browsefilter=mostrecent&p=1
+https://steamcommunity.com/app/207610/reviews/?browsefilter=mostrecent&p=1
+https://steamcommunity.com/app/414700/reviews/?browsefilter=mostrecent&p=1
 ```
 via the `url_file` command line argument:
 ```bash

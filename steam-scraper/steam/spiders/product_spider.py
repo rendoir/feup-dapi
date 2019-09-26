@@ -22,7 +22,7 @@ def load_product(response):
     found_id = re.findall('/app/(.*?)/', response.url)
     if found_id:
         id = found_id[0]
-        # reviews_url = f'http://steamcommunity.com/app/{id}/reviews/?browsefilter=mostrecent&p=1'
+        # reviews_url = f'https://steamcommunity.com/app/{id}/reviews/?browsefilter=mostrecent&p=1'
         # loader.add_value('reviews_url', reviews_url)
         loader.add_value('id', id)
 
@@ -80,7 +80,7 @@ def load_product(response):
     about = response.css('#game_area_description').get()
     if about:
         about = re.sub('<h2>About This Game</h2>', '', about) # Remove about header
-        about = re.sub('<[^<]+?>|\t|\x0a|\r', '', about) # Remove tags
+        about = re.sub('<[^<]+?>|\t|\r|\xa0|\x0d|\x09', '', about) # Remove tags
         loader.add_value('about', about)
 
     return loader.load_item()
@@ -88,7 +88,7 @@ def load_product(response):
 
 class ProductSpider(CrawlSpider):
     name = 'products'
-    start_urls = ['http://store.steampowered.com/search/?'] # Ordered by relevance
+    start_urls = ['https://store.steampowered.com/search/?category1=998'] # Ordered by relevance, games only category
 
     allowed_domains = ['steampowered.com']
 
@@ -108,7 +108,7 @@ class ProductSpider(CrawlSpider):
 
     def start_requests(self):
         if self.steam_id:
-            yield Request(f'http://store.steampowered.com/app/{self.steam_id}/',
+            yield Request(f'https://store.steampowered.com/app/{self.steam_id}/',
                           callback=self.parse_product,
                           cookies=[{'name': 'wants_mature_content', 'value': '1', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
                                    {'name': 'lastagecheckage', 'value': '1-0-1996', 'path': '/', 'expires': 'Thu, 24 Sep 2020 7:16:26 GMT', 'created': 'Wed, 25 Sep 2019 18:33:38 GMT', 'domain': 'store.steampowered.com'},
