@@ -18,6 +18,10 @@ DOWNLOADER_MIDDLEWARES = {
     'steam.middlewares.CircumventAgeCheckMiddleware': 600,
 }
 
+ITEM_PIPELINES = {
+    'steam.pipelines.DefaultValuesPipeline': 500,
+}
+
 AUTOTHROTTLE_ENABLED = True
 
 DUPEFILTER_CLASS = 'steam.middlewares.SteamDupeFilter'
