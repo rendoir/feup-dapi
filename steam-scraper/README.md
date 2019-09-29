@@ -56,6 +56,7 @@ Here's some example output:
     'genres': ['Action', 'Adventure', 'RPG'],
     'id': '812140',
     'n_reviews': 28504,
+    'percent_positive': '84',
     'price': '59.99€',
     'publisher': ['Ubisoft'],
     'franchise': "Assassin's Creed", 

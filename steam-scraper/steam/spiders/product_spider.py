@@ -17,13 +17,10 @@ def load_product(response):
 
     url = url_query_cleaner(response.url, ['snr'], remove=True)
     url = canonicalize_url(url)
-    # loader.add_value('url', url)
 
     found_id = re.findall('/app/(.*?)/', response.url)
     if found_id:
         id = found_id[0]
-        # reviews_url = f'https://steamcommunity.com/app/{id}/reviews/?browsefilter=mostrecent&p=1'
-        # loader.add_value('reviews_url', reviews_url)
         loader.add_value('id', id)
 
     # Publication details.
@@ -60,15 +57,20 @@ def load_product(response):
         loader.add_css('discount_price', '.discount_final_price ::text')
     loader.add_value('price', price)
 
+    # Reviews statistics
     sentiment = response.css('.summary .game_review_summary').xpath(
         '../*[@itemprop="description"]/text()').extract()
     if sentiment and sentiment[0] and (not sentiment[0][0].isdigit()) and (not (sentiment == 'No user reviews')):
         loader.add_value('sentiment', sentiment)
-    loader.add_css('n_reviews', '.summary .responsive_hidden', re='\(([\d,]+)\)')
 
-    # loader.add_xpath(
-    #     'metascore',
-    #     '//div[@id="game_area_metascore"]/div[contains(@class, "score")]/text()')
+    percent_positive = response.css('.user_reviews_summary_row').xpath(
+        '../*[@itemprop="aggregateRating"]/@data-tooltip-html').extract()
+    if percent_positive:
+        match = re.search('^(\d+)%', percent_positive[0])
+        if match:
+            loader.add_value('percent_positive', match.group(1))
+
+    loader.add_css('n_reviews', '.summary .responsive_hidden', re='\(([\d,]+)\)')
 
     early_access = response.css('.early_access_header')
     if early_access:

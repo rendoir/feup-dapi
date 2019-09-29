@@ -66,10 +66,8 @@ def str_to_int(x):
 
 
 class ProductItem(scrapy.Item):
-    # url = scrapy.Field()
     id = scrapy.Field()
     app_name = scrapy.Field()
-    # reviews_url = scrapy.Field()
     title = scrapy.Field()
     genres = scrapy.Field(
         output_processor=Compose(TakeFirst(), lambda x: x.split(','), MapCompose(StripText()))
@@ -100,15 +98,13 @@ class ProductItem(scrapy.Item):
                                  str_to_float)
     )
     sentiment = scrapy.Field()
+    percent_positive = scrapy.Field()
     n_reviews = scrapy.Field(
         output_processor=Compose(
             MapCompose(StripText(), lambda x: x.replace(',', ''), str_to_int),
             max
         )
     )
-    # metascore = scrapy.Field(
-    #     output_processor=Compose(TakeFirst(), StripText(), str_to_int)
-    # )
     early_access = scrapy.Field()
     description = scrapy.Field()
     franchise = scrapy.Field()
@@ -117,8 +113,6 @@ class ProductItem(scrapy.Item):
 
 class ReviewItem(scrapy.Item):
     product_id = scrapy.Field()
-    # page = scrapy.Field()
-    # page_order = scrapy.Field()
     recommended = scrapy.Field(
         output_processor=Compose(TakeFirst(), simplify_recommended),
     )
