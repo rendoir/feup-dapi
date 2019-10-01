@@ -4,7 +4,7 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from .items import ProductItem
+from .items import ProductItem, ReviewItem
 
 
 class SteamPipeline(object):
@@ -17,5 +17,10 @@ class DefaultValuesPipeline(object):
         if type(item) is ProductItem:
             item.setdefault('sentiment', 'null')
             item.setdefault('percent_positive', 'null')
-            item.setdefault('n_reviews', '0')
+            item.setdefault('n_reviews', 0)
+
+        elif type(item) is ReviewItem:
+            item.setdefault('found_helpful', 0)
+            item.setdefault('found_funny', 0)
+
         return item
