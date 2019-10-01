@@ -39,7 +39,7 @@ scrapy crawl products -o output/product.jl -a steam_id=812140
 
 Scrapy also includes a setting to limit the number of scraped products:
 ```bash
-scrapy crawl products -o output/product.jl -a steam_id=812140 -s CLOSESPIDER_ITEMCOUNT=10
+scrapy crawl products -o output/products.jl -s CLOSESPIDER_ITEMCOUNT=10
 ```
 
 Here's some example output:
@@ -137,6 +137,8 @@ Here's an output sample:
     'product_id': '812140',
     'products': 156,
     'recommended': True,
+    'found_helpful': 33,
+    'found_funny': 2,
     'text': "Ubisoft really wasn't joking around when it called the latest "
             "Assassin's Creed game an Odyssey. It's not just in the Greek "
             'tragedy-inspired story, the vast, vast map or the sheer number of '

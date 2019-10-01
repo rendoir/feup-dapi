@@ -124,16 +124,13 @@ class ReviewItem(scrapy.Item):
         output_processor=Compose(Join('\n'), StripText())
     )
     hours = scrapy.Field(
-        output_processor=Compose(TakeFirst(), str_to_float)
+        output_processor=Compose(TakeFirst(), lambda x: x.replace(',', ''), str_to_float)
     )
     found_helpful = scrapy.Field(
-        output_processor=Compose(TakeFirst(), str_to_int)
-    )
-    found_unhelpful = scrapy.Field(
-        output_processor=Compose(TakeFirst(), str_to_int)
+        output_processor=Compose(TakeFirst(), lambda x: x.replace(',', ''), str_to_int)
     )
     found_funny = scrapy.Field(
-        output_processor=Compose(TakeFirst(), str_to_int)
+        output_processor=Compose(TakeFirst(), lambda x: x.replace(',', ''), str_to_int)
     )
     compensation = scrapy.Field()
     username = scrapy.Field()

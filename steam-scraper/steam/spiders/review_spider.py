@@ -30,8 +30,7 @@ def load_review(review, product_id, page, order):
 
     # Review feedback data.
     feedback = loader.get_css('.found_helpful ::text')
-    loader.add_value('found_helpful', feedback, re='([\d,]+) of')
-    loader.add_value('found_unhelpful', feedback, re='of ([\d,]+)')
+    loader.add_value('found_helpful', feedback, re='([\d,]+).*helpful')
     loader.add_value('found_funny', feedback, re='([\d,]+).*funny')
 
     early_access = loader.get_css('.early_access_review')
