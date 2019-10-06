@@ -93,6 +93,11 @@ class ProductItem(scrapy.Item):
                                  StripText(chars=' €$\n\t\r'),
                                  str_to_float)
     )
+    discount_price = scrapy.Field(
+        output_processor=Compose(TakeFirst(),
+                                 StripText(chars=' €$\n\t\r'),
+                                 str_to_float)
+    )
     sentiment = scrapy.Field()
     percent_positive = scrapy.Field(
         output_processor=Compose(TakeFirst(), str_to_int)

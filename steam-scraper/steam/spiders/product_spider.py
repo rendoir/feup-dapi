@@ -50,9 +50,10 @@ def load_product(response):
     loader.add_css('tags', 'a.app_tag::text')
     loader.add_css('description', ".game_description_snippet::text")
 
-    price = response.css('.game_purchase_price ::text').extract_first()
+    price = response.css('.game_area_purchase_game .game_purchase_price ::text').extract_first()
     if not price:
-        price = response.css('.discount_original_price ::text').extract_first()
+        price = response.css('.game_area_purchase_game .discount_original_price ::text').extract_first()
+        loader.add_css('discount_price', '.game_area_purchase_game .discount_final_price ::text')
     if 'Free to Play' in price:
         price = '0.0'
     loader.add_value('price', price)
