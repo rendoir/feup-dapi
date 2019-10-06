@@ -66,8 +66,9 @@ def str_to_int(x):
 
 
 class ProductItem(scrapy.Item):
-    id = scrapy.Field()
-    app_name = scrapy.Field()
+    id = scrapy.Field(
+        output_processor=Compose(TakeFirst(), str_to_int)
+    )
     title = scrapy.Field()
     genres = scrapy.Field(
         output_processor=Compose(TakeFirst(), lambda x: x.split(','), MapCompose(StripText()))
@@ -89,16 +90,13 @@ class ProductItem(scrapy.Item):
     )
     price = scrapy.Field(
         output_processor=Compose(TakeFirst(),
-                                 StripText(chars=' $\n\t\r'),
-                                 str_to_float)
-    )
-    discount_price = scrapy.Field(
-        output_processor=Compose(TakeFirst(),
-                                 StripText(chars=' $\n\t\r'),
+                                 StripText(chars=' €$\n\t\r'),
                                  str_to_float)
     )
     sentiment = scrapy.Field()
-    percent_positive = scrapy.Field()
+    percent_positive = scrapy.Field(
+        output_processor=Compose(TakeFirst(), str_to_int)
+    )
     n_reviews = scrapy.Field(
         output_processor=Compose(
             MapCompose(StripText(), lambda x: x.replace(',', ''), str_to_int),
@@ -112,7 +110,9 @@ class ProductItem(scrapy.Item):
 
 
 class ReviewItem(scrapy.Item):
-    product_id = scrapy.Field()
+    product_id = scrapy.Field(
+        output_processor=Compose(TakeFirst(), str_to_int)
+    )
     recommended = scrapy.Field(
         output_processor=Compose(TakeFirst(), simplify_recommended),
     )
@@ -134,7 +134,6 @@ class ReviewItem(scrapy.Item):
     )
     compensation = scrapy.Field()
     username = scrapy.Field()
-    user_id = scrapy.Field()
     products = scrapy.Field(
         output_processor=Compose(TakeFirst(), str_to_int)
     )

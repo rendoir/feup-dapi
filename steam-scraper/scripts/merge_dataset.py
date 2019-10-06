@@ -15,7 +15,7 @@ def merge_files():
     id_to_product = dict()
 
     for product in products_file:
-        id = re.search('\"id\": \"(\d+)\"', product).group(1)
+        id = re.search('\"id\": (\d+)', product).group(1)
         id_to_product[id] = product
 
     id_to_reviews = dict()
@@ -24,7 +24,7 @@ def merge_files():
     for review in reviews_file:
         if not review in seen_reviews:
             seen_reviews.add(review)
-            id = re.search('\"product_id\": \"(\d+)\"', review).group(1)
+            id = re.search('\"product_id\": (\d+)', review).group(1)
             if id in id_to_reviews:
                 id_to_reviews[id] = id_to_reviews[id] + ", "
                 id_to_reviews[id] = id_to_reviews[id] + review.rstrip("\n\r")

@@ -46,7 +46,6 @@ def load_product(response):
     except:  # noqa E722
         pass
 
-    loader.add_css('app_name', '.apphub_AppName ::text')
     loader.add_css('specs', '.game_area_details_specs:not(.learning_about) a ::text')
     loader.add_css('tags', 'a.app_tag::text')
     loader.add_css('description', ".game_description_snippet::text")
@@ -54,7 +53,8 @@ def load_product(response):
     price = response.css('.game_purchase_price ::text').extract_first()
     if not price:
         price = response.css('.discount_original_price ::text').extract_first()
-        loader.add_css('discount_price', '.discount_final_price ::text')
+    if 'Free to Play' in price:
+        price = '0.0'
     loader.add_value('price', price)
 
     # Reviews statistics

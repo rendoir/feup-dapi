@@ -15,8 +15,6 @@ class DefaultValuesPipeline(object):
 
     def process_item(self, item, spider):
         if type(item) is ProductItem:
-            item.setdefault('sentiment', 'null')
-            item.setdefault('percent_positive', 'null')
             item.setdefault('n_reviews', 0)
 
         elif type(item) is ReviewItem:

@@ -24,7 +24,6 @@ def load_review(review, product_id, page, order):
     loader.add_css('compensation', '.received_compensation::text')
 
     # User/reviewer data.
-    loader.add_css('user_id', '.apphub_CardContentAuthorName a::attr(href)', re='.*/profiles/(.+)/')
     loader.add_css('username', '.apphub_CardContentAuthorName a::text')
     loader.add_css('products', '.apphub_CardContentMoreLink ::text', re='([\d,]+) product')
 
@@ -91,7 +90,7 @@ class ReviewSpider(scrapy.Spider):
     def read_games(self):
         with open(self.games_file, 'r') as f:
             for game in f:
-                game_id = re.search('\"id\": \"(\d+)\"', game).group(1)
+                game_id = re.search('\"id\": (\d+)', game).group(1)
                 if game_id:
                     self.game_id_to_number_reviews[game_id] = 0
                     url = f'https://steamcommunity.com/app/{game_id}/reviews/?browsefilter=toprated&p=1'

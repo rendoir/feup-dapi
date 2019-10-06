@@ -45,7 +45,7 @@ scrapy crawl products -o output/products.jl -s CLOSESPIDER_ITEMCOUNT=10
 Here's some example output:
 ```python
 {
-    'app_name': "Assassin's Creed® Odyssey",
+    'title': "Assassin's Creed® Odyssey",
     'description': "Choose your fate in Assassin's Creed® Odyssey. From outcast "
                    'to living legend, embark on an odyssey to uncover the secrets '
                    'of your past and change the fate of Ancient Greece.',
@@ -54,10 +54,10 @@ Here's some example output:
                   'Ubisoft Shanghai'],
     'early_access': False,
     'genres': ['Action', 'Adventure', 'RPG'],
-    'id': '812140',
+    'id': 812140,
     'n_reviews': 28504,
-    'percent_positive': '84',
-    'price': '59.99€',
+    'percent_positive': 84,
+    'price': 59.99,
     'publisher': ['Ubisoft'],
     'franchise': "Assassin's Creed", 
     'release_date': "05-10-2018",
@@ -71,7 +71,6 @@ Here's some example output:
              'Sexual Content', 'Choices Matter', 'Violent',
              'Atmospheric', 'Great Soundtrack', 'Nudity',
              'Multiplayer', 'Gore'],
-    'title': "Assassin's Creed® Odyssey",
     'about': "Choose your fate in Assassin's Creed® Odyssey.From outcast to "
           'living legend, embark on an odyssey to uncover the secrets of your '
           'past and change the fate of Ancient Greece.TRAVEL TO ANCIENT GREECE '
@@ -134,7 +133,7 @@ Here's an output sample:
     'early_access': False,
     'found_funny': 2,
     'hours': 70.9,
-    'product_id': '812140',
+    'product_id': 812140,
     'products': 156,
     'recommended': True,
     'found_helpful': 33,
