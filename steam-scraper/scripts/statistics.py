@@ -31,7 +31,7 @@ def statistics():
             
             scraped_reviews = game.get("reviews", [])
             total_n_scraped_reviews += len(scraped_reviews)
-            n_scraped_reviews_per_game.append(total_n_scraped_reviews)
+            n_scraped_reviews_per_game.append(len(scraped_reviews))
             n_reviews_per_game.append(game["n_reviews"])
 
             about_length = len(game.get("about", ""))
@@ -67,7 +67,7 @@ def statistics():
     # About length histogram
     seaborn.distplot(about_text_lengths, hist=True, kde=False, hist_kws={'edgecolor':'black'})
     plt.title('Histogram of game description lengths')
-    plt.xlabel('Description length')
+    plt.xlabel('Description length (in characters)')
     plt.ylabel('Games')
     plt.savefig("output/about_lengths.png")
     plt.clf()
@@ -81,6 +81,14 @@ def statistics():
     plt.xlabel('Games')
     plt.ylabel('Genres')
     plt.savefig("output/genres_popularity.png", bbox_inches = "tight")
+    plt.clf()
+
+    # Scraped reviews per game
+    seaborn.distplot(n_scraped_reviews_per_game, hist=True, kde=False, color='#ff615e', hist_kws={'edgecolor':'black'})
+    plt.title('Histogram of game reviews')
+    plt.xlabel('Reviews')
+    plt.ylabel('Games')
+    plt.savefig("output/game_reviews.png")
     plt.clf()
 
 
