@@ -80,7 +80,7 @@ def statistics():
     plt.title('Genres popularity')
     plt.xlabel('Games')
     plt.ylabel('Genres')
-    plt.savefig("output/genres_popularity.png")
+    plt.savefig("output/genres_popularity.png", bbox_inches = "tight")
     plt.clf()
 
 
