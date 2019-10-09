@@ -75,7 +75,7 @@ def statistics():
     # Genres popularity
     genresx = np.array(list(genres_popularity.keys())).astype(str)
     genresy = np.array(list(genres_popularity.values())).astype(int)
-    genresData = pd.DataFrame({'Genres': genresx, 'Games': genresy})
+    genresData = pd.DataFrame({'Genres': genresx, 'Games': genresy}).sort_values(by=['Games'])
     seaborn.barplot(data=genresData, y='Genres', x='Games')
     plt.title('Genres popularity')
     plt.xlabel('Games')
