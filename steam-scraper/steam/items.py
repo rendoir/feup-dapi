@@ -82,7 +82,7 @@ class ProductItem(scrapy.Item):
     release_date = scrapy.Field(
         output_processor=Compose(TakeFirst(), StripText(), standardize_date)
     )
-    specs = scrapy.Field(
+    features = scrapy.Field(
         output_processor=MapCompose(StripText())
     )
     tags = scrapy.Field(

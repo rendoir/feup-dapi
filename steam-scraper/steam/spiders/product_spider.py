@@ -46,7 +46,7 @@ def load_product(response):
     except:  # noqa E722
         pass
 
-    loader.add_css('specs', '.game_area_details_specs:not(.learning_about) a ::text')
+    loader.add_css('features', '.game_area_details_specs:not(.learning_about) a ::text')
     loader.add_css('tags', 'a.app_tag::text')
     loader.add_css('description', ".game_description_snippet::text")
 

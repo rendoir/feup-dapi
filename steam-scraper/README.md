@@ -62,7 +62,7 @@ Here's some example output:
     'franchise': "Assassin's Creed", 
     'release_date': "05-10-2018",
     'sentiment': 'Very Positive',
-    'specs': ['Single-player', 'Steam Achievements', 'Steam Trading Cards',
+    'features': ['Single-player', 'Steam Achievements', 'Steam Trading Cards',
               'Captions available', 'In-App Purchases', 'Partial Controller Support'],
     'tags': ['Open World', 'RPG', 'Assassin',
              'Singleplayer', 'Action', 'Historical',

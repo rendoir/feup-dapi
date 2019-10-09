@@ -66,9 +66,9 @@ def statistics():
     
     # Print simple statistics
     print(f'Total games: 36469')
-    print(f'Total reviews: {total_n_reviews}')
     print(f'Scraped Games: {total_n_games}')
     print(f'Scraped reviews: {total_n_scraped_reviews}')
+    print(f'Total reviews from scraped games: {total_n_reviews}')
     print(f'Distinct users: {len(usernames)}')
     print(f'Average reviews per game: {average_review_per_game}')
     print(f'Average scraped reviews per game: {average_scraped_review_per_game}')
