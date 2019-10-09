@@ -25,6 +25,7 @@ def statistics():
     usernames = set()
     genres_popularity = dict()
     game_dates = dict()
+    review_dates = dict()
 
     # Loop each game
     with jsonlines.open(args.dataset) as reader:
@@ -32,12 +33,11 @@ def statistics():
             total_n_games += 1
             total_n_reviews += game["n_reviews"]
             
-            date_year = re.search('-(\d{4})', game["release_date"]).group(1)
+            date_year = re.search('(\d{4})', game.get("release_date", "0000")).group(1)
             if not date_year in game_dates:
                 game_dates[date_year] = 0
             game_dates[date_year] += 1
 
-            
             scraped_reviews = game.get("reviews", [])
             total_n_scraped_reviews += len(scraped_reviews)
             n_scraped_reviews_per_game.append(len(scraped_reviews))
@@ -51,14 +51,28 @@ def statistics():
                 review_text_lengths.append(review_length)
                 total_review_text_length += review_length
                 usernames.add(review.get("username", ""))
+                date_year = re.search('(\d{4})', review.get("date", "0000")).group(1)
+                if not date_year in review_dates:
+                    review_dates[date_year] = 0
+                review_dates[date_year] += 1
 
             for genre in game.get("genres", []):
                 if not genre in genres_popularity:
                     genres_popularity[genre] = 0 
                 genres_popularity[genre] += 1
 
+    # Post-loop cleanup
+    usernames.discard("") # Delete default keys
+    review_dates.pop("0000", None) # Delete default keys
+    game_dates.pop("0000", None) # Delete default keys
+    for key in list(review_dates):
+        if int(key) > 2019: # Remove upcoming dates from plots
+            review_dates.pop(key)
+    for key in list(game_dates):
+        if int(key) > 2019:
+            game_dates.pop(key) # Remove upcoming dates from plots
+
     # Post-loop statistical calculations
-    usernames.discard("") 
     average_review_per_game = total_n_reviews / total_n_games
     average_scraped_review_per_game = total_n_scraped_reviews / total_n_games
     average_about_text_length = total_about_text_length / total_n_games
@@ -122,6 +136,16 @@ def statistics():
     plt.savefig("output/game_releases.png")
     plt.clf()
 
+    # Review submissions per year
+    submissionx = np.array(list(review_dates.keys())).astype(int)
+    submissiony = np.array(list(review_dates.values())).astype(int)
+    submissionData = pd.DataFrame({'Year': submissionx, 'Reviews': submissiony}).sort_values(by=['Year'])
+    seaborn.lineplot(data=submissionData, x='Year', y='Reviews')
+    plt.title('Review Submissions by Year')
+    plt.xlabel('Year')
+    plt.ylabel('Reviews')
+    plt.savefig("output/reviews_date.png")
+    plt.clf()
 
 
 if __name__ == '__main__':
