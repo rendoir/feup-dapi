@@ -4,6 +4,8 @@ import seaborn
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import datetime
+import re
 
 def statistics():
     parser = argparse.ArgumentParser()
@@ -22,12 +24,19 @@ def statistics():
     total_review_text_length = 0
     usernames = set()
     genres_popularity = dict()
+    game_dates = dict()
 
     # Loop each game
     with jsonlines.open(args.dataset) as reader:
         for game in reader:
             total_n_games += 1
             total_n_reviews += game["n_reviews"]
+            
+            date_year = re.search('-(\d{4})', game["release_date"]).group(1)
+            if not date_year in game_dates:
+                game_dates[date_year] = 0
+            game_dates[date_year] += 1
+
             
             scraped_reviews = game.get("reviews", [])
             total_n_scraped_reviews += len(scraped_reviews)
@@ -49,7 +58,9 @@ def statistics():
                 genres_popularity[genre] += 1
 
     # Post-loop statistical calculations
-    average_review_per_game = total_n_scraped_reviews / total_n_games
+    usernames.discard("") 
+    average_review_per_game = total_n_reviews / total_n_games
+    average_scraped_review_per_game = total_n_scraped_reviews / total_n_games
     average_about_text_length = total_about_text_length / total_n_games
     average_review_text_length = total_review_text_length / total_n_scraped_reviews
     
@@ -60,6 +71,7 @@ def statistics():
     print(f'Scraped reviews: {total_n_scraped_reviews}')
     print(f'Distinct users: {len(usernames)}')
     print(f'Average reviews per game: {average_review_per_game}')
+    print(f'Average scraped reviews per game: {average_scraped_review_per_game}')
     print(f'Average about length: {average_about_text_length}')
     print(f'Average review body: {average_review_text_length}')
 
@@ -98,6 +110,18 @@ def statistics():
     plt.ylabel('Games')
     plt.savefig("output/game_reviews_total.png")
     plt.clf()
+
+    # Games releases per year
+    releasex = np.array(list(game_dates.keys())).astype(int)
+    releasey = np.array(list(game_dates.values())).astype(int)
+    releaseData = pd.DataFrame({'Year': releasex, 'Games': releasey}).sort_values(by=['Year'])
+    seaborn.lineplot(data=releaseData, x='Year', y='Games')
+    plt.title('Game Releases by Year')
+    plt.xlabel('Year')
+    plt.ylabel('Games')
+    plt.savefig("output/game_releases.png")
+    plt.clf()
+
 
 
 if __name__ == '__main__':
