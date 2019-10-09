@@ -88,7 +88,15 @@ def statistics():
     plt.title('Histogram of game reviews')
     plt.xlabel('Reviews')
     plt.ylabel('Games')
-    plt.savefig("output/game_reviews.png")
+    plt.savefig("output/game_reviews_scraped.png")
+    plt.clf()
+
+    # Total reviews per game
+    seaborn.distplot(n_reviews_per_game, hist=True, kde=False, color='#ff615e', hist_kws={'edgecolor':'black'})
+    plt.title('Histogram of game reviews')
+    plt.xlabel('Reviews')
+    plt.ylabel('Games')
+    plt.savefig("output/game_reviews_total.png")
     plt.clf()
 
 
