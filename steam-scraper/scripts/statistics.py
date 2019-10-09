@@ -38,10 +38,10 @@ def statistics():
             about_text_lengths.append(about_length)
             total_about_text_length += about_length
             for review in scraped_reviews:
-                review_length = len(review["text"])
+                review_length = len(review.get("text", ""))
                 review_text_lengths.append(review_length)
                 total_review_text_length += review_length
-                usernames.add(review["username"])
+                usernames.add(review.get("username", ""))
 
             for genre in game.get("genres", []):
                 if not genre in genres_popularity:
@@ -84,7 +84,7 @@ def statistics():
     plt.clf()
 
     # Scraped reviews per game
-    seaborn.distplot(n_scraped_reviews_per_game, hist=True, kde=False, color='#ff615e', hist_kws={'edgecolor':'black'})
+    seaborn.distplot(n_scraped_reviews_per_game, hist=True, kde=False, color='#ff615e', hist_kws={'edgecolor':'black'}, bins=10)
     plt.title('Histogram of game reviews')
     plt.xlabel('Reviews')
     plt.ylabel('Games')

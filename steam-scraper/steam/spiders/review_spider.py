@@ -1,5 +1,6 @@
 import re
 import sys
+import random as rndm
 
 import scrapy
 from scrapy.http import FormRequest, Request
@@ -71,12 +72,16 @@ class ReviewSpider(scrapy.Spider):
 
     game_id_to_number_reviews = dict()
 
-    def __init__(self, url_file=None, steam_id=None, games_file=None, limit=sys.maxsize, *args, **kwargs):
+    def __init__(self, url_file=None, steam_id=None, games_file=None, limit=sys.maxsize, random=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.url_file = url_file
         self.steam_id = steam_id
         self.games_file = games_file
+        self.random = random
         self.limit = int(limit)
+        if random:
+            self.limit_per_game = dict()
+            rndm.seed()
 
     def read_urls(self):
         with open(self.url_file, 'r') as f:
@@ -120,9 +125,16 @@ class ReviewSpider(scrapy.Spider):
         for i, review in enumerate(reviews):
             yield load_review(review, product_id, page, i)
             self.game_id_to_number_reviews[product_id] += 1
-            if self.game_id_to_number_reviews[product_id] >= self.limit:
-                del self.game_id_to_number_reviews[product_id]
-                return
+            if self.random:
+                if not product_id in self.limit_per_game:
+                    self.limit_per_game[product_id] = rndm.randint(0, self.limit)
+                if self.game_id_to_number_reviews[product_id] >= self.limit_per_game[product_id]:
+                    del self.game_id_to_number_reviews[product_id]
+                    return
+            else:
+                if self.game_id_to_number_reviews[product_id] >= self.limit:
+                    del self.game_id_to_number_reviews[product_id]
+                    return
 
         # Navigate to next page.
         form = response.xpath('//form[contains(@id, "MoreContentForm")]')
