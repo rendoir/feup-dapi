@@ -1,0 +1,46 @@
+{
+   "add-field": [
+      {
+         "name": "about",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": false
+      },
+      {
+         "name": "description",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": false
+      },
+      {
+         "name": "genres",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": true
+      },
+      {
+         "name": "features",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": true
+      },
+      {
+         "name": "tags",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": true
+      },
+      {
+         "name": "reviews.text",
+         "type": "text_en",
+         "stored": true,
+         "indexed": true,
+         "multiValued": true
+      }
+   ]
+}
