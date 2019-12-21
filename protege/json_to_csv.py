@@ -9,8 +9,18 @@ game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentime
 review_keys = ['product_id', 'recommended', 'date', 'text', 'hours', 'username', 'products', 'early_access', 'found_helpful', 'found_funny', 'compensation']
 
 games = []
+MAX_GAMES = 100
+MAX_REVIEWS = 5
 with jsonlines.open('../steam-scraper/output/dataset.jl') as reader:
     for game in reader:
+        # Limit number of games
+        if len(games) > MAX_GAMES:
+            break
+
+        # Limit number of reviews per game
+        if 'reviews' in game and len(game['reviews']) > MAX_REVIEWS:
+            game['reviews'] = game['reviews'][:MAX_REVIEWS]
+        
         games.append(game)
 
 files = dict()
