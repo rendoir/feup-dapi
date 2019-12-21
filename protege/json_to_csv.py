@@ -14,8 +14,8 @@ files["reviews"] = csv.writer(open('./csv/reviews.csv', "w+"))
 files["tags"] = csv.writer(open('./csv/tags.csv', "w+"))
 files["features"] = csv.writer(open('./csv/features.csv', "w+"))
 files["genres"] = csv.writer(open('./csv/genres.csv', "w+"))
-files["developer"] = csv.writer(open('./csv/developers.csv', "w+"))
-files["publisher"] = csv.writer(open('./csv/pusblishers.csv', "w+"))
+files["developer"] = csv.writer(open('./csv/developer.csv', "w+"))
+files["publisher"] = csv.writer(open('./csv/pusblisher.csv', "w+"))
 
 for game in games:
     for key in list(game.keys()):

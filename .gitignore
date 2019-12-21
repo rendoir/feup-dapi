@@ -5,3 +5,4 @@ env
 .scrapy
 output
 protege/csv
+protege/.~lock.*
