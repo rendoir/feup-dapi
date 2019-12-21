@@ -6,8 +6,10 @@ import collections
 
 game_keys = ['id', 'title', 'genres', 'developer', 'publisher', 'release_date', 'features', 'tags', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'reviews', 'discount_price', 'franchise']
 game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'discount_price', 'franchise']
+review_keys = ['product_id', 'recommended', 'date', 'text', 'hours', 'username', 'products', 'early_access', 'found_helpful', 'found_funny', 'compensation']
+
 games = []
-with jsonlines.open('./dataset.jl') as reader:
+with jsonlines.open('../steam-scraper/output/dataset.jl') as reader:
     for game in reader:
         games.append(game)
 
@@ -31,8 +33,15 @@ for game in games:
             for value in game[key]:
                 # If it is a dict (reviews), write its values (assumes they're literals)
                 if isinstance(value, dict):
+                    # Ensure same number of columns
+                    for review_key in review_keys:
+                        if not review_key in value.keys():
+                            value[review_key] = None
+                    value = collections.OrderedDict(sorted(value.items()))
+
                     files[key].writerow(value.values())
                 else:
+                    # Not a dict, just id and value
                     files[key].writerow([game["id"], value])
             del game[key]
 
