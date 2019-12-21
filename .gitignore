@@ -4,4 +4,4 @@ env
 .vscode
 .scrapy
 output
-elastic-search
+protege/csv
