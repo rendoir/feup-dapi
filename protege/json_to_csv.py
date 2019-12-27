@@ -4,15 +4,15 @@ import re
 import collections
 import sys
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+#reload(sys)
+#sys.setdefaultencoding('utf8')
 
 game_keys = ['id', 'title', 'genres', 'developer', 'publisher', 'release_date', 'features', 'tags', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'reviews', 'discount_price', 'franchise']
 game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'discount_price', 'franchise']
 review_keys = ['product_id', 'recommended', 'date', 'text', 'hours', 'username', 'products', 'early_access', 'found_helpful', 'found_funny', 'compensation']
 
 games = []
-MAX_GAMES = 5
+MAX_GAMES = 10
 MAX_REVIEWS = 5
 with jsonlines.open('../steam-scraper/output/dataset.jl') as reader:
     for game in reader:
@@ -34,6 +34,7 @@ files["features"] = csv.writer(open('./csv/features.csv', "w+"))
 files["genres"] = csv.writer(open('./csv/genres.csv', "w+"))
 files["developer"] = csv.writer(open('./csv/developer.csv', "w+"))
 files["publisher"] = csv.writer(open('./csv/pusblisher.csv', "w+"))
+files["franchise"] = csv.writer(open('./csv/franchise.csv', "w+"))
 
 for game in games:
     for key in game_keys:
@@ -57,6 +58,11 @@ for game in games:
                     # Not a dict, just id and value
                     files[key].writerow([game["id"], value])
             del game[key]
+
+        # Handle exceptions
+        # Write franchise to its file, since there may be null values
+        if key == 'franchise' and not game['franchise'] is None:
+            files['franchise'].writerow([game["id"], game['franchise']])
 
     # Ensure same number of columns
     game = collections.OrderedDict(sorted(game.items()))

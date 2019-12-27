@@ -29,7 +29,6 @@
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise"/>
         <rdfs:comment xml:lang="en">The belongsToFranchise property specifies that a game belongs to a certain game franchise. For example, Sonic Mania belongs to the Sonic the Hedgehog franchise.</rdfs:comment>
-        <rdfs:label xml:lang="en">belongs to game franchise</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -39,7 +38,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#containsGameTag">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Tag"/>
-        <rdfs:label xml:lang="en">contains game tag</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -60,7 +58,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameFeature">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature"/>
-        <rdfs:label xml:lang="en">has game feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -70,7 +67,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameGenre">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://purl.org/net/VideoGameOntology#Genre"/>
-        <rdfs:label xml:lang="en">has game genre</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -80,8 +76,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameTag">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Tag"/>
-        <rdfs:comment xml:lang="en">has game tag</rdfs:comment>
-        <rdfs:label xml:lang="en">has game tag</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -91,7 +85,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasReview">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-        <rdfs:label xml:lang="en">has review</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,7 +97,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-        <rdfs:label xml:lang="en">is author of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -115,7 +107,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer"/>
-        <rdfs:label xml:lang="en">is developed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -127,7 +118,6 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#publishesGame"/>
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
-        <rdfs:label xml:lang="en">is published by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -137,7 +127,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isVotedBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-        <rdfs:label xml:lang="en">is voted by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -149,7 +138,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-        <rdfs:label xml:lang="en">is written by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -178,7 +166,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#votesOn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-        <rdfs:label xml:lang="en">votes on</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -370,41 +357,31 @@
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer">
-        <rdfs:label xml:lang="en">Developer</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer"/>
     
 
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature">
-        <rdfs:label xml:lang="en">Feature</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature"/>
     
 
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise">
-        <rdfs:label xml:lang="en">Franchise</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise"/>
     
 
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher">
-        <rdfs:label xml:lang="en">Publisher</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
     
 
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review">
-        <rdfs:label xml:lang="en">Review</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
     
 
 
@@ -422,9 +399,7 @@
 
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating">
-        <rdfs:label xml:lang="en">User review rating</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
 </rdf:RDF>
 
 
