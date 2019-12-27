@@ -33,26 +33,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#containsGameTag -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#containsGameTag">
-        <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Tag"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#developsGame -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#developsGame">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isDevelopedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer"/>
-        <rdfs:range rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameFeature -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameFeature">
@@ -115,7 +95,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isPublishedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#publishesGame"/>
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
     </owl:ObjectProperty>
@@ -138,16 +117,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#publishesGame -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#publishesGame">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
-        <rdfs:range rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
     </owl:ObjectProperty>
     
 
