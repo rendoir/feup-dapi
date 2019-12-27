@@ -2,14 +2,17 @@ import jsonlines
 import csv
 import re
 import collections
+import sys
 
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 game_keys = ['id', 'title', 'genres', 'developer', 'publisher', 'release_date', 'features', 'tags', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'reviews', 'discount_price', 'franchise']
 game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'discount_price', 'franchise']
 review_keys = ['product_id', 'recommended', 'date', 'text', 'hours', 'username', 'products', 'early_access', 'found_helpful', 'found_funny', 'compensation']
 
 games = []
-MAX_GAMES = 100
+MAX_GAMES = 5
 MAX_REVIEWS = 5
 with jsonlines.open('../steam-scraper/output/dataset.jl') as reader:
     for game in reader:
