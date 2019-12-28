@@ -101,6 +101,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#userReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#userReview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
+        <rdfs:range rdf:resource="http://purl.org/net/VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#userVote -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#userVote">
