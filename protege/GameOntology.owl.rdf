@@ -33,6 +33,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#gameReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#gameReview">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameFeature -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasGameFeature">
@@ -60,27 +70,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasReview -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#hasReview">
-        <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isAuthorOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isAuthorOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isWrittenBy"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isDevelopedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isDevelopedBy">
@@ -97,44 +86,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Game"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isVotedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isVotedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isWrittenBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#isWrittenBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#User"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#reviews -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#reviews">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#votesOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#votesOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
     </owl:ObjectProperty>
     
 

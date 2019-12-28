@@ -12,6 +12,7 @@ game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentime
 review_keys = ['product_id', 'recommended', 'date', 'text', 'hours', 'username', 'products', 'early_access', 'found_helpful', 'found_funny', 'compensation']
 
 games = []
+gameReviews = dict()
 MAX_GAMES = 10
 MAX_REVIEWS = 5
 with jsonlines.open('../steam-scraper/output/dataset.jl') as reader:
@@ -37,6 +38,8 @@ files["publisher"] = csv.writer(open('./csv/pusblisher.csv', "w+"))
 files["franchise"] = csv.writer(open('./csv/franchise.csv', "w+"))
 
 for game in games:
+    current_review = 1
+
     for key in game_keys:
         # Ensure same number of columns
         if not key in game.keys() and key in game_literals:
@@ -51,6 +54,8 @@ for game in games:
                     for review_key in review_keys:
                         if not review_key in value.keys():
                             value[review_key] = None
+                    value['review_id'] = current_review
+                    current_review += 1
                     value = collections.OrderedDict(sorted(value.items()))
 
                     files[key].writerow(value.values())
