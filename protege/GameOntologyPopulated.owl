@@ -2445,7 +2445,7 @@
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">466.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 Steam Awards 2016 wins (from 2 nominations). I mean, how could a truck game win such prestigious awards? Just like Donald Trump - it&apos;s a good game, even if you hate to admit it.
 Just try not to riot and burn down servers, thank you.</ComputerVideoGameOntology:text>
@@ -2461,7 +2461,7 @@ Just try not to riot and burn down servers, thank you.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">210.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">147</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a great game they update it alot they also have multiplayer that is free lot of mods and dlc that you can put in your game easy</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2476,7 +2476,7 @@ Just try not to riot and burn down servers, thank you.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.3</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I know most &quot;XYZ Simulator&quot; games are utter crap, but this is the real deal. A great game that still gets updates and new content all the time. From the developers blog, one can see that they really love what they do, and they really love this game. Not really a helpful review, is it? Well, I just wanted to say I love this game, and the developers deserve lots of respect, unlike some spoiled brats that call themselves developers these days...</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2491,7 +2491,7 @@ Just try not to riot and burn down servers, thank you.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.1</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">69</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Funny game, lets take the trucker cap on and say houdy! :D
 I recomend this game, dosent need specially PC to run.</ComputerVideoGameOntology:text>
@@ -2507,7 +2507,7 @@ I recomend this game, dosent need specially PC to run.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazing.... but you need a good graphics card, upgrading mine and the power supply soon aha, I can still play on med to low setting and look alright :)</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2536,7 +2536,7 @@ I recomend this game, dosent need specially PC to run.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">887.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">28-11-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you want to win this game, just fly Ameriblubber in Realistic Battles, or Brits and Russians in Arcade.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2551,7 +2551,7 @@ I recomend this game, dosent need specially PC to run.</ComputerVideoGameOntolog
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">311.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">449</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">25-08-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Awesome!
 New destruction patch is better than EA&apos;s Frostbite 3 engine!!!
@@ -2569,7 +2569,7 @@ That&apos;s a good new I guess...</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.7</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When i tried out the game it was very fun. Though i had to delete because of memory space issues, it was a rather fun game will i had it. War Thunder takes you to the pacific or european battle fields where you have the choice to engage in in single player missions or take the fight online against other players in a massive team death match.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2584,7 +2584,7 @@ That&apos;s a good new I guess...</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">398.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I recommend this game as it is action packed and insane. This game has both air force and ground forces.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2599,7 +2599,7 @@ That&apos;s a good new I guess...</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">220</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">06-12-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I SHOULD BE ABLE TO KAMIKAZE ♥♥♥♥♥♥♥♥♥♥♥♥S THIS IS BULLLLLLSHIT</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2632,8 +2632,8 @@ Do whatever it takes to survive.</ComputerVideoGameOntology:about>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">26-02-2016</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
-        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intresting Game</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
     
@@ -2647,8 +2647,8 @@ Do whatever it takes to survive.</ComputerVideoGameOntology:about>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">365.3</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">22-08-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
-        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNNNN! i really reccomend this game to all you guys who dont have it. like minecraft with guns! but rememeber this rule... DONT TRUST ANYONE!xDa</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
     
@@ -2662,8 +2662,8 @@ Do whatever it takes to survive.</ComputerVideoGameOntology:about>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">23-08-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
-        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Awesome survival Game to play with friends</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
     
@@ -2677,8 +2677,8 @@ Do whatever it takes to survive.</ComputerVideoGameOntology:about>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">23-08-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
-        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i found this game to be crazy cool i was lucky enough to have gotten this game for free but the endless building and raiding on this game smakes it awesome the maps are big and the time you invest in this game is a smile on your facethe whole time 9/10 rating</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
     
@@ -2692,8 +2692,8 @@ Do whatever it takes to survive.</ComputerVideoGameOntology:about>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">188.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">85</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">23-08-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
-        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this is good if you like surviveing games and pvp games. it has a lot of bugs but i don&apos;t find them a lot. and you don&apos;t have to play pvp you can make your own server and play with your friends or just find a no pvp server  if you buy it
 GOOD       LUCK</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2722,7 +2722,7 @@ GOOD       LUCK</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">378</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">20-06-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Really great game with great city, traffic mechanics.
 If you are into City building, tycoon games or Sims series - this game is definetely for you.
@@ -2740,7 +2740,7 @@ Still there is nothing bad I can say about this game - it&apos;s great.</Compute
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">475</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">17-08-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best city builder I have ever played. This game is like the fairly new Sim City but with alot more put into it.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2755,7 +2755,7 @@ Still there is nothing bad I can say about this game - it&apos;s great.</Compute
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">18-08-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excellent sim, rather hard at 1st</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2770,7 +2770,7 @@ Still there is nothing bad I can say about this game - it&apos;s great.</Compute
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">280.7</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">276</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">14-11-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11/10 - Better than Simcity!</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2785,7 +2785,7 @@ Still there is nothing bad I can say about this game - it&apos;s great.</Compute
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">764</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">04-10-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I agree with all the comments on how awsome it is and i agree to buy it</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2884,7 +2884,7 @@ Still there is nothing bad I can say about this game - it&apos;s great.</Compute
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">346</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-10-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pros
 +Art is Excellent
@@ -2907,7 +2907,7 @@ I want to say the story is good but i haven&apos;t got far enough in the game to
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.7</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">477</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-10-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This game is undercooked
 &quot;Well why the recommend then?&quot; you say? Because despite the GLARING spots in the game I still enjoyed it. It&apos;s one of those games that needed a neutral rating. TL;DR if you can tolerate lack of a concise tutorial, lacking practice mode, non-existent plot and many missing assets in exchange for a very interesting and satisfying gameplay loop then go for it. The devs should patch these soon, and I&apos;ll update my review then.
@@ -2941,7 +2941,7 @@ As you can see, we kinda have a very rough release but fixable situation here. T
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">192</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-10-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i&apos;m having a great time with the game. You kind of NEED a controller to play the game since the PC controls are all wacky, but outside of that this game has been pretty awesome so far.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -2981,7 +2981,7 @@ Created a discussion with some questions to developers, I&apos;m concerned that 
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-10-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No keyboard and mouse support, I forced myself to play with DS4 felt so weird, and uncomfortable couz i dont play with controller. I may wait for update or mod to fix that.
 60 FPS capped
@@ -3030,7 +3030,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">92</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">07-07-2016</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">♥♥♥♥ing fantastic</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3045,7 +3045,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">148.1</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">24-07-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I recommend this game 100% to people who want to try a combat game that doesn&apos;t use actual guns on the battlefield. It uses very unique weapons and classes. It&apos;s fun trying out the classes, but your KDR in-game might be bad at first. You just need to find a class you&apos;re best at and you&apos;ll do just fine. For me, the Pyro was an instant success. Pyro is a class in TF2 that gives you the starting items: Flamethrower, Shotgun, Axe. If you have fun with it, you&apos;ll notice items you want, or items you see people commonly using... so get out there and you might be able to get one of &apos;em.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3060,7 +3060,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-07-2016</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">really good game</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3075,7 +3075,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2390.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">03-01-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Fortress 2 is a very, VERY addicting game to play, It has lots and lots of gamemodes and maps for you try out, Official and   Not official, either way, They&apos;re all very good. What is the best part about this game? The community. You can trade for weapons, miscs, and best of all in this category, HATS. And this is all Free To Play! (Obviously) Some parts might make you rage, but most of the time, its an amazing game to have fun in, and blow up people.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3090,7 +3090,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">532.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">06-07-2014</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I love this game, it&apos;s very funny. It&apos;s shooter, also dance simulator, fly simulator, kill-yourself simulator and more. I&apos;ve played this game 300+ hours and I like it.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3159,7 +3159,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">941.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">24-03-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I&apos;m an older woman, and I find that this game appeals to all ages.  I have sooo many hours into this game and I love it.  I admit I need my sons help and his friends to get me through things sometimes when it&apos;s a monster that&apos;s kicking my butt.  I&apos;m now at the stage where I can do it on my own.  I think they did an amazing job with this game.  It doesn&apos;t matter how old you are, this is so fun.  I highly recommend this game.  Thanks for doing such a great job with this game.</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3174,7 +3174,7 @@ The game is so wonderful so I recommend it.</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">06-06-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I’m not a fan of coop games and I really hate grinding but the goal of this game is grinding in coop. After seeing lots of positive feedback I decided to jump on this game and I was very pleasantly surprised.
 For those who don&apos;t know what this game is about, it is what the name tells you – a monster hunter game. You hunt monsters, gather resources, craft new gear to hunt stronger monsters to get better gear. That’s it, very simple formula, but gameplay is really amazing.
@@ -3202,7 +3202,7 @@ Monster Hunter World is a wonderful game and I recommend it to anyone who likes 
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">21-08-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I&apos;m in my mid 40&apos;s so I don&apos;t always have a lot of time to play games but Monster Hunter: World has me hooked. Since I only can devote about an hour or so every night I just set a goal of what I want to do such as killing or trapping Anjanath to gather parts for the armor set. It&apos;s slow going for me, but I don&apos;t mind taking my time because the fights are fantastic and sometimes last 20 minutes or more of pure adrenaline-pulsing bliss where a well-timed Palico heal or quick dodge or a perfectly aimed hit makes you feel like you are actually fighting a real monster and that your own life is really on the line.
 This game is what I dreamed video games would be when I was a kid in the mid 1980&apos;s: it&apos;s fun, it&apos;s drop-dead gorgeous and runs at a nice buttery-smooth 60fps (on my RTX 2060 and Ryzen 5 2600x with 16GB RAM), and overall it&apos;s just insanely fun.</ComputerVideoGameOntology:text>
@@ -3218,7 +3218,7 @@ This game is what I dreamed video games would be when I was a kid in the mid 198
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">381.6</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">117</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">09-11-2018</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you ever get bored of the end-game grind, here&apos;s a small list of things to do that may make you feel a little happy.
 1. Try a new weapon. I can&apos;t stress this enough! Don&apos;t just stick with one weapon, try to learn them all. You&apos;ll definitely find something that fits you best, but knowing another weapon makes you want to do hunts again and again. You will get a lot more hours doing this.
@@ -3240,7 +3240,7 @@ Maybe those things to do will help you out a bit. Maybe it&apos;ll squeeze out a
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1666.3</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">14-06-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pretty fun, both solo and multi, don&apos;t believe the mixed reviews those were all due to the bad launch, the game is a very solid edition to the franchise and as its own game. It&apos;s very friendly to newcomers and challenge ramps up as you progress through the vibrant New World.
 Hunt, gather, craft sets, get better gear, weapons, to hunt bigger monsters. Gear only helps you up until a certain point, skill will still win the day.</ComputerVideoGameOntology:text>
@@ -3286,7 +3286,7 @@ The devs went back on their promise that they would not make NA P2W. Not only sh
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">268.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">17-06-2017</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">So, where to even begin. I guess the most important thing here is that this is certainly not the MMO for everybody. This MMO manages to pack in something for every kind of player out there, but that actually doesn&apos;t mean it will appeal to everyone.
 First of all, I&apos;ll cover the topic of the pricepoint, since in the very most lenient sense here, it&apos;s &quot;variable&quot;.
@@ -3351,7 +3351,7 @@ While Black Desert Online is a great online game for some, it is essentially hav
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">126.1</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">28-05-2017</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROS
 [Combat &amp; Gameplay]
@@ -3436,7 +3436,7 @@ I was going to add critiques against this review here, but i don&apos;t have eno
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3054.4</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">277</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">08-05-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I&apos;ve been stuck at home due to cancer, in constant pain 24 hours a day for the past 5 years. I can honestly say, it only became bearable when Total War Warhammer came out. Thanks to both this and the previous game, I&apos;ve managed to put up with it. I am a huge Warhammer fan, and not only have the stuck to the lore wherever reasonable, they have filled out improved pieces that Games Workshop never really touched! (zombie pirates anyone?)
 The first game was amazing, and the improvements of this one shows the developers actually listens and implements some of the suggestions of the community. Not to mention the modding scene at the moment is incredible, as is the support for them from the developers. I have a couple thousand hours on this, and can&apos;t recommend it enough!</ComputerVideoGameOntology:text>
@@ -3452,7 +3452,7 @@ The first game was amazing, and the improvements of this one shows the developer
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">201.2</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">01-09-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This game has ruined strategy games for me.
 The sheer quality of Total War: Warhammer II is why it&apos;s hard to justify playing Three Kingdoms. It&apos;s why Civ doesn&apos;t do it for me anymore. It&apos;s why as I creep towards 200 in-game hours. I haven&apos;t touched half the content on offer.
@@ -3473,7 +3473,7 @@ One thing I will nitpick is that diplomacy is limited. Three Kingdoms does it mu
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">261.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">103</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">22-10-2017</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">163 hours later, I&apos;ve finally beaten this thing. It&apos;s a beast -- a sprawling grand strategy game full of nuance, lore, and emotionally engaging content. The AI is much smarter now. I had about a 100-hour learning curve, bouncing between different factions and trying different tactics until I really figured out how to play the game. This thing is amazing. I have to put it down for awhile so I can go get the million things done that I&apos;ve been neglecting, but here are some pointers:
 1. Gain as much control of your continent as possible, as soon as possible. Make sure you can recruit some sort of troops anywhere in your empire, so you can quickly sprout new armies in the late game.
@@ -3504,7 +3504,7 @@ And that&apos;s all I&apos;ve got. Good luck! It&apos;s a lot of fun. I highly r
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">379</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">326</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">29-01-2018</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My most epic Total War: Warhammer moment: When my line of Chaos Chosen was about to charge into enemy line, one guy screamed “BLOOD FOR THE BLOOD GOD”,and then the whole army continued “SKULLS FOR THE SKULL THRONE”</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3519,7 +3519,7 @@ And that&apos;s all I&apos;ve got. Good luck! It&apos;s a lot of fun. I highly r
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">876.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">423</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">14-02-2018</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There&apos;s been a lot of talk since November on the discussion boards involving uninformed consumers not understanding how this iteration of Total War works DLC-wise. For that reason, I&apos;d like to take a second to tell you, the potential customer, what you&apos;re getting into, and why I still feel it&apos;s worth it.
 tl;dr at the bottom.
@@ -3586,7 +3586,7 @@ Get Total War: Warhammer 1 when you get this one because Sega was cautious about
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">24-08-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To anyone who lost their savefile after updating windows. Go to your Windows.old file and navigate to
 And move all the files from the folder above to this directory
@@ -3605,7 +3605,7 @@ Windows 10 *slow clap*</ComputerVideoGameOntology:text>
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51.6</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">635</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">31-08-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(RFTA) is a hybrid between a traditional 3rd person Shooter RPG, such as
 , and the Souls-like genre. Set in a time when
@@ -3658,7 +3658,7 @@ Overall, RFTA is definitely
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">243</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19-08-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has so many things going for it that it&apos;s hard to believe.
 The attention to detail is honestly impressive, especially with the dynamic generation of each map.
@@ -3690,7 +3690,7 @@ Overall, Remnant is a steal for $40 USD. I can&apos;t wait to see what&apos;s in
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.5</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">420</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">09-09-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is always the burning question I ask myself when a new prosperous game is released and like many gamers out there, I have a
 for buying games and not playing them... So is this game worth a buy? Is it worth your money? Is it going to keep you captivated long enough before the next hit-title to come along and grab your attention?
@@ -3714,7 +3714,7 @@ Definitely pick this game up, you won&apos;t be disappointed if you enjoy - Dest
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.5</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">606</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19-08-2019</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
     </owl:NamedIndividual>
     
@@ -3766,7 +3766,7 @@ CS: GO features new maps, characters, weapons, and game modes, and delivers upda
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">422.9</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10-12-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very nice game ~!</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3781,7 +3781,7 @@ CS: GO features new maps, characters, weapons, and game modes, and delivers upda
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">632.5</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">143</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10-12-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermoso Juego♥♥♥♥♥♥♥♥♥♥</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3796,7 +3796,7 @@ CS: GO features new maps, characters, weapons, and game modes, and delivers upda
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2064.1</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">154</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10-12-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usally a great game except if they release a new feature then it is unplayable until a month after...
 But still the best competitive shooter game on the market</ComputerVideoGameOntology:text>
@@ -3812,7 +3812,7 @@ But still the best competitive shooter game on the market</ComputerVideoGameOnto
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1230.6</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10-12-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very nice game :)</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
@@ -3827,7 +3827,7 @@ But still the best competitive shooter game on the market</ComputerVideoGameOnto
         <ComputerVideoGameOntology:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">362.8</ComputerVideoGameOntology:hours>
         <ComputerVideoGameOntology:products rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</ComputerVideoGameOntology:products>
         <ComputerVideoGameOntology:publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">10-12-2015</ComputerVideoGameOntology:publishingDate>
-        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:recommended>
+        <ComputerVideoGameOntology:recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ComputerVideoGameOntology:recommended>
         <ComputerVideoGameOntology:reviewEarlyAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ComputerVideoGameOntology:reviewEarlyAccess>
         <ComputerVideoGameOntology:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">best game ever!</ComputerVideoGameOntology:text>
     </owl:NamedIndividual>
