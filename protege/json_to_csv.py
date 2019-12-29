@@ -3,6 +3,7 @@ import csv
 import re
 import collections
 import sys
+from datetime import datetime
 
 #reload(sys)
 #sys.setdefaultencoding('utf8')
@@ -54,6 +55,14 @@ for game in games:
                     for review_key in review_keys:
                         if not review_key in value.keys():
                             value[review_key] = None
+
+                        # Booleans must be lowercase
+                        if isinstance(value[review_key], bool):
+                            value[review_key] = str(value[review_key]).lower()
+                        # Handle date format swap
+                        elif review_key == 'date' and not value['date'] is None:
+                            value['date'] = datetime.strptime(value['date'], '%d-%m-%Y').strftime('%Y-%m-%d')
+
                     value['review_id'] = current_review
                     current_review += 1
                     value = collections.OrderedDict(sorted(value.items()))
@@ -68,6 +77,12 @@ for game in games:
         # Write franchise to its file, since there may be null values
         if key == 'franchise' and not game['franchise'] is None:
             files['franchise'].writerow([game["id"], game['franchise']])
+        # Handle date format swap
+        elif key == 'release_date' and not game['release_date'] is None:
+            game['release_date'] = datetime.strptime(game['release_date'], '%d-%m-%Y').strftime('%Y-%m-%d')
+        # Booleans must be lowercase
+        elif key in game and not game[key] is None and isinstance(game[key], bool):
+            game[key] = str(game[key]).lower()
 
     # Ensure same number of columns
     game = collections.OrderedDict(sorted(game.items()))
