@@ -7,3 +7,5 @@ output
 protege/csv
 protege/.~lock.*
 cellfie.log
+protege/queries/logs/
+protege/queries/run_queries.sh

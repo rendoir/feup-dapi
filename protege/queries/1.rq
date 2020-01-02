@@ -1,0 +1,27 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX cvgo: <http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#>
+PREFIX vgo:  <http://purl.org/net/VideoGameOntology#>
+
+SELECT ?title ?percent_pos
+WHERE {
+    ?game cvgo:title ?title
+    { 
+        SELECT ?game (COUNT(?pos_reviews) * 100 / (COUNT(?reviews)) as ?percent_pos)
+        WHERE{
+            {
+                ?reviews  cvgo:gameReview ?game .
+            }
+            UNION
+            {
+                ?pos_reviews cvgo:gameReview ?game ;
+                         cvgo:recommended true .
+            }
+        }
+        GROUP BY ?game
+    }
+}
+ORDER BY DESC(?percent_pos)
