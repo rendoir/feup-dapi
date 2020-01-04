@@ -37,6 +37,7 @@ for q in range(1,10):
                 m = re.sub('\|','',m)
                 m = re.sub('\s','',m)
                 m = re.sub('\"','',m)
+                m = re.sub('\^\^\<.*\>', '', m)
                 row.append(m)
 
         i += 1
