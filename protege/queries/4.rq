@@ -1,3 +1,4 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX cvgo: <http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#>
 PREFIX vgo:  <http://purl.org/net/VideoGameOntology#>
@@ -9,9 +10,9 @@ WHERE {
     ?genre cvgo:isGenreOfGame ?game .
     ?game cvgo:title ?title .
 
-    ?feature cvgo:featureName ?featureName .
-    ?tag cvgo:tagName ?tagName .
-    ?genre cvgo:genreName ?genreName .
+    ?feature foaf:name ?featureName .
+    ?tag foaf:name ?tagName .
+    ?genre foaf:name ?genreName .
 
     FILTER(?featureName IN ("Multi-player"))
     FILTER(?tagName IN ("Competitive"))
