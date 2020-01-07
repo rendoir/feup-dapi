@@ -4,7 +4,9 @@ import re
 import collections
 import sys
 from datetime import datetime
+from pathlib import Path
 
+Path("./csv").mkdir(parents=True, exist_ok=True)
 
 game_keys = ['id', 'title', 'genres', 'developer', 'publisher', 'release_date', 'features', 'tags', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'reviews', 'discount_price', 'franchise']
 game_literals = ['id', 'title', 'release_date', 'description', 'price', 'sentiment', 'percent_positive', 'n_reviews', 'early_access', 'about', 'discount_price', 'franchise']
