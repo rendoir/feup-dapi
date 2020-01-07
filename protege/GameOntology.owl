@@ -394,6 +394,45 @@
     <!-- http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Game"/>
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Genre"/>
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Developer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Tag"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Game"/>
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Genre"/>
+            <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Feature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Franchise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Publisher"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Review"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#Tag"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#UserReviewRating"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
