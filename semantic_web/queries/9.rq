@@ -1,0 +1,17 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX cvgo: <http://www.semanticweb.org/dapi/ontologies/2019/11/ComputerVideoGameOntology#>
+PREFIX vgo:  <http://purl.org/net/VideoGameOntology#>
+
+SELECT (?pName AS ?publisherName) (GROUP_CONCAT (DISTINCT(?dName) ; separator = ", ") AS ?developers) (COUNT(DISTINCT(?dName)) AS ?total)
+WHERE {
+    ?publisher cvgo:publishesGame ?game ;
+               foaf:name ?pName .
+    ?game cvgo:title ?title .
+    ?developer cvgo:developsGame ?game ;
+               foaf:name ?dName .
+
+    FILTER (?publisher != ?developer)
+}
+GROUP BY ?pName
+ORDER BY DESC(?total)

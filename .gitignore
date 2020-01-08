@@ -4,8 +4,7 @@ env
 .vscode
 .scrapy
 output
-protege/csv
-protege/.~lock.*
+semantic_web/csv
+semantic_web/.~lock.*
+semantic_web/queries/logs/
 cellfie.log
-protege/queries/logs/
-protege/queries/run_queries.sh
